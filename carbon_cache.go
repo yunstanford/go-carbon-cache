@@ -1,4 +1,5 @@
 // Listen to connections, receiving metrics
+// Protocol for one carbon cache instance
 
 package main
 
@@ -13,7 +14,7 @@ import (
 
 
 var (
-	metricCache		*MemCache
+	metricCache    *MemCache
 
 )
 
@@ -31,10 +32,21 @@ func accept(l *net.TCPListener, config Config) {
 
 func handle(c net.Conn, config Config) {
 	defer c.Close()
+	// receive metrics and store them in MemCache
+
 
 }
 
 
-func main() {
+func drain() {
+
+}
+
+func start(config Config) {
+	
+
+	// Starting Writer
+	go drain()
+	// Starting Listener
 	
 }
