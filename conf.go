@@ -15,7 +15,11 @@ type Config struct {
 
 type Instance struct {
 	name                    string
-	PICKLE_RECEIVER_PORT    int
+	// PICKLE_RECEIVER_PORT    int
 	LINE_RECEIVER_PORT	    int
 	CACHE_QUERY_PORT        int
 }
+
+
+
+// load config file and construct a Config object
