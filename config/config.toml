@@ -1,0 +1,20 @@
+# Config Example
+
+title = "Toml Config Example"
+
+[configuration]
+storage_dir = "/opt/graphite/storage/whipser"
+database = "whisper"
+max_cache_size = 5000
+cache_write_strategy = "sort"
+
+
+[instances]
+
+	[instances.a]
+	line_receiver_port = 2103
+	cache_query_port = 7102
+
+	[instances.b]
+	line_receiver_port = 2203
+	cache_query_port = 7202

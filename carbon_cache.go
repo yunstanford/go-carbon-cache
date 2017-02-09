@@ -13,6 +13,8 @@ import (
 	"bufio"
 	"github.com/rcrowley/goagain"
 	logging "github.com/op/go-logging"
+	"github.com/BurntSushi/toml"
+
 )
 
 
@@ -67,9 +69,9 @@ func drain() {
 }
 
 
-func start(config Config) {
+func start(config tomlConfig, worker string) {
 	
-
+	
 	// Starting Writer
 	go drain()
 	// Starting Listener
